@@ -1,0 +1,213 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #281d3f;
+  background-repeat: no-repeat;
+  background-size:cover;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+/* styling Nabar */
+.navbar {
+  display: grid;
+  grid-template-columns: repeat(5, 400px 1fr 1fr 1fr 1fr);
+  margin-top: 20px;
+  grid-gap: 20px;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.logo:hover {
+  letter-spacing: 5px;
+}
+li:nth-child(1) {
+  margin-right: 200px;
+  padding: 10px 30px;
+}
+li:nth-child(2) {
+  margin-left: 200px;
+}
+.nav-link {
+  padding: 10px 30px;
+  border-radius: 50px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.nav-link:not(first-of-type) {
+  background-color: #39229e;
+  transition: transform 0.3s;
+}
+.nav-link:not(first-of-type):hover {
+  background-color: #4475e2;
+  cursor: pointer;
+  transform: translateY(5px);
+}
+/* styling Nabar ends*/
+
+/*styling the Login form*/
+fieldset {
+  position: relative;
+  margin: 30px;
+  margin-top: 40px;
+  width: 300px;
+  height: 400px;
+  border-style: solid;
+  border-radius: 50px;
+  background: transparent;
+  
+}
+.form-section{
+  border-radius: 50px;
+  background: linear-gradient(145deg, #2b1f43, #241a39);
+  box-shadow:  5px 5px 10px #110c1a,
+               -5px -5px 10px #3f2e64;
+               position: relative;
+               width: 400px;
+  height: 500px;
+               
+}
+
+fieldset label {
+  font-size: medium;
+}
+input::placeholder {
+  color: rgb(155, 148, 148);
+}
+legend{
+  border: 2px solid;
+  border-radius: 50px;
+  
+  padding-left: 5px;
+  padding-right: 5px;
+}
+input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: #281d3f;
+  outline: none;
+  color:#4475e2;
+  font-family: Poppins;
+}
+input:hover{
+  border: 1px solid #fff;
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color:#4475e2;
+}
+/* align the content and form */
+.hero-section{
+  display: grid;
+  grid-template-columns: repeat(2, 700px 1fr);
+  align-items:center;
+  margin-top: 100px;
+}
+/*login button style*/
+.submit{
+    position: relative;
+    
+    padding: 10px;
+    
+    border-radius:50px;
+    /*border: 1px solid #4475e2;*/
+    color:#fff;
+    transform: translate(-1%);
+    border: none;
+    background-image: linear-gradient(to left, #4475e2, #3f61d2, #3c4dc2, #3a39b0, #39229e);
+    width:300px;
+    transition: transaform 0.3s;
+}
+.submit:hover{
+  letter-spacing: 2px;
+  transform: translate(-1%, 3%);
+  cursor: pointer;
+  box-shadow: 0 0 20px #3923b49a;
+  }
+
+/*hero section content */
+.hero-section-content{
+  margin-left: 60px;
+  margin-bottom: 100px;
+}
+.hero-section-content h3{
+  margin-top: -35px;
+  color:#4475e2;
+}
+
+.hero-section-content hr{
+    width:130px;
+    margin-left: 0px;
+    margin-top: -10px;
+    
+}
+.hero-section-content .btn1{
+  border:none;
+  outline: none;
+  padding: 15px 45px;
+  background: transparent;
+  border-radius: 50px;
+  font-size: 20px;
+  color:#4475e2;
+  cursor: pointer;
+  transition: transform 0.3s; 
+  border-style: solid;
+  border: 1px solid  #4475e2;
+  
+}
+.btn1:hover{
+  transform: translateY(5px);
+  color: #ffffff;
+  background: #447fe2;
+}
+
+/* styling the social media */
+.social-media{
+  transform: translateY(80px) translateX(30px);
+}
+
+.social-media i{
+    font-size: 35px;
+     border: 2px solid #4475e2;
+     width: 60px;
+     height: 60px;
+     border-radius: 50%;
+     text-align: center;
+     padding: 10px;
+     cursor: pointer;
+     transition: all .3s;
+     
+}
+
+.social-media i:hover{
+  background-color: #4475e2;
+  transform: translateY(-10px);
+  cursor:grab;
+  color:#39229e;
+  
+}
+.google{
+  width: 300px;
+  border-radius: 50px;
+  color:aliceblue;
+  background-image: linear-gradient(to left, #4475e2, #3f61d2, #3c4dc2, #3a39b0, #39229e);
+  padding: 10px;
+  border:none;
+  font-family: 'Times New Roman', Times, serif;
+  }
+  .google:hover{
+    cursor: pointer;
+    box-shadow: 0 0 20px #3923b49a;
+  }
